@@ -6,7 +6,6 @@ import { BASE_URL } from 'utils/requests';
 import { validateEmail } from 'utils/validate';
 import './styles.css';
 
-
 type Props = {
     movieId: string;
 }
@@ -45,7 +44,7 @@ function FormCard({ movieId }: Props) {
                 score: score
             }
         }
-        
+
         axios(config).then(response => {
             navigate("/");
         });
@@ -80,7 +79,7 @@ function FormCard({ movieId }: Props) {
                 </Link>
             </div >
         </div >
-    )
+    );
 }
 
 export default FormCard;
